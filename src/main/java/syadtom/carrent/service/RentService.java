@@ -2,8 +2,12 @@ package syadtom.carrent.service;
 
 import syadtom.carrent.model.Rent;
 
-public interface RentService {
-    Rent create(Rent req);
-    Rent getAll();
+import java.util.List;
 
+public interface RentService {
+    Rent create(Rent request);
+    List<Rent> getAll();
+    Rent getOne(Integer id);
+    Rent update(Rent request);
+    void delete(Integer id);
 }

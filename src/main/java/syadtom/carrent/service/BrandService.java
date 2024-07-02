@@ -5,9 +5,9 @@ import syadtom.carrent.model.Brand;
 import java.util.List;
 
 public interface BrandService {
-    List <Brand> getAll();
-    Brand create(Brand req);
+    Brand create(Brand request);
+    List<Brand> getAll();
     Brand getOne(Integer id);
-    Brand update(Brand req);
+    Brand update(Brand request);
     void delete(Integer id);
 }
